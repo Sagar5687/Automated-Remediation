@@ -1,3 +1,6 @@
+---
+
+````markdown
 # Automated Remediation Expert System
 
 This project implements a **rule-based expert system** for IT Operations.  
@@ -21,24 +24,51 @@ It reads infrastructure events from a CSV file, applies remediation rules using 
 - Install experta:
   ```bash
   pip install experta
-If using Python 3.10–3.12:
+````
 
-Install experta3:
+### If using Python 3.10–3.12:
 
-pip install experta3
+* Install experta3:
 
-How It Works
+  ```bash
+  pip install experta3
+  ```
 
-Each event becomes a Fact
+---
 
-Experta rules check for conditions like:
+## 🧠 How It Works
 
-High CPU under high traffic → Scale out
+* Each event becomes a **Fact**
+* Experta rules check for conditions such as:
 
-Too many restarts → Escalate to on-call
+  * High CPU under high traffic → **Scale out**
+  * Too many restarts → **Escalate to on-call**
+  * High error rate → **Rollback deployment**
+  * Disk almost full → **Clear logs**
+* The **first matching rule** generates the remediation action
 
-High error rate → Rollback
+---
 
-Disk almost full → Clear logs
+## 📤 Example Output
 
-The first matching rule generates the remediation action
+```
+event_id,service_name,status,recommended_action,reason,severity
+12,auth-service,CRITICAL,SCALE_OUT,"High CPU under high traffic",HIGH
+27,payment-api,OK,NO_ACTION,"Service healthy",INFO
+```
+
+---
+
+## 🛠 Editing Rules
+
+Rules are located inside `RemediationEngine` and follow this pattern:
+
+```python
+@Rule(EventFact(cpu_percent=MATCH.cpu), TEST(lambda cpu: cpu > 90))
+def high_cpu(self):
+    # define action here
+```
+
+---
+
+
