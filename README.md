@@ -69,6 +69,22 @@ def high_cpu(self):
     # define action here
 ```
 
+---
 
+## 📄 License
 
+This project is licensed under the MIT License.
 
+```
+
+---
+
+If you'd like, I can also generate:
+
+✔ A shorter README  
+✔ A version with badges (Python version, license, PRs welcome)  
+✔ A diagram of the expert system workflow  
+✔ A project structure tree
+
+Just tell me!
+```
