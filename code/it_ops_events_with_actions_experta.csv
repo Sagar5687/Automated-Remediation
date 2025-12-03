@@ -1,0 +1,151 @@
+event_id,service_name,region,cpu_percent,memory_percent,disk_percent,response_time_ms,error_rate_percent,status,traffic_level,previous_restarts,is_business_hours,recommended_action,action_reason,action_severity
+1,auth-service,us-east-1,57.0,89.0,43.0,801.0,1.79,WARNING,HIGH,0,1,NO_DECISION,[DEFAULT] No rule fired.,INFO
+2,auth-service,us-east-1,18.0,91.0,33.0,199.0,1.01,OK,LOW,1,1,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+3,payment-api,us-west-2,57.0,74.0,50.0,1957.0,6.95,CRITICAL,HIGH,2,1,ROLLBACK_DEPLOYMENT,[ROLLBACK_ON_HIGH_ERRORS] Error rate=6.95%.,CRITICAL
+4,payment-api,us-east-1,33.0,64.0,75.0,244.0,1.52,OK,MEDIUM,4,1,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+5,auth-service,eu-central-1,35.0,66.0,67.0,537.0,0.32,OK,MEDIUM,4,0,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+6,auth-service,us-east-1,54.0,49.0,40.0,1883.0,2.32,CRITICAL,HIGH,0,1,RESTART_SERVICE,"[RESTART_UNRESPONSIVE_SERVICE] CRITICAL, prev_restarts=0.",CRITICAL
+7,orders-service,us-west-2,93.0,46.0,75.0,1047.0,1.3,CRITICAL,HIGH,2,0,SCALE_OUT,"[SCALE_OUT_UNDER_HIGH_LOAD] Status=CRITICAL, CPU=93.0% under HIGH traffic.",HIGH
+8,search-service,eu-central-1,39.0,54.0,78.0,205.0,0.33,OK,LOW,4,0,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+9,orders-service,us-east-1,57.0,54.0,81.0,96.0,1.61,OK,LOW,0,0,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+10,search-service,eu-central-1,47.0,38.0,88.0,661.0,1.58,WARNING,MEDIUM,2,0,NO_DECISION,[DEFAULT] No rule fired.,INFO
+11,payment-api,eu-central-1,74.0,94.0,84.0,838.0,5.98,CRITICAL,HIGH,3,1,ESCALATE_TO_ONCALL,[ESCALATE_AFTER_RETRIES] Still CRITICAL after 3 restarts.,CRITICAL
+12,payment-api,us-east-1,71.0,39.0,44.0,486.0,6.05,CRITICAL,HIGH,1,1,ROLLBACK_DEPLOYMENT,[ROLLBACK_ON_HIGH_ERRORS] Error rate=6.05%.,CRITICAL
+13,search-service,us-east-1,68.0,52.0,97.0,760.0,3.98,CRITICAL,MEDIUM,4,0,ESCALATE_TO_ONCALL,[ESCALATE_AFTER_RETRIES] Still CRITICAL after 4 restarts.,CRITICAL
+14,auth-service,eu-central-1,88.0,34.0,73.0,846.0,6.15,CRITICAL,HIGH,2,1,SCALE_OUT,"[SCALE_OUT_UNDER_HIGH_LOAD] Status=CRITICAL, CPU=88.0% under HIGH traffic.",HIGH
+15,payment-api,us-west-2,51.0,84.0,52.0,214.0,1.94,OK,LOW,0,1,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+16,search-service,eu-central-1,14.0,20.0,97.0,271.0,1.53,CRITICAL,LOW,4,1,ESCALATE_TO_ONCALL,[ESCALATE_AFTER_RETRIES] Still CRITICAL after 4 restarts.,CRITICAL
+17,inventory-service,us-east-1,28.0,92.0,60.0,237.0,0.48,OK,LOW,0,0,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+18,inventory-service,us-east-1,89.0,90.0,90.0,557.0,1.03,WARNING,HIGH,1,1,SCALE_OUT,"[SCALE_OUT_UNDER_HIGH_LOAD] Status=WARNING, CPU=89.0% under HIGH traffic.",HIGH
+19,search-service,eu-central-1,47.0,59.0,55.0,702.0,3.02,WARNING,MEDIUM,3,1,NO_DECISION,[DEFAULT] No rule fired.,INFO
+20,inventory-service,eu-central-1,35.0,22.0,73.0,403.0,0.9,OK,MEDIUM,4,0,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+21,search-service,us-east-1,9.0,62.0,34.0,110.0,0.46,OK,LOW,0,0,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+22,orders-service,eu-central-1,47.0,51.0,90.0,702.0,0.53,WARNING,MEDIUM,3,1,CLEAR_LOGS_AND_TMP,[FREE_DISK_SPACE] Disk at 90.0%.,HIGH
+23,payment-api,us-east-1,47.0,79.0,82.0,300.0,0.71,OK,LOW,0,0,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+24,auth-service,us-west-2,61.0,44.0,61.0,1939.0,6.89,CRITICAL,HIGH,1,1,ROLLBACK_DEPLOYMENT,[ROLLBACK_ON_HIGH_ERRORS] Error rate=6.89%.,CRITICAL
+25,payment-api,us-west-2,22.0,76.0,39.0,316.0,0.5,OK,LOW,4,0,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+26,auth-service,eu-central-1,93.0,41.0,60.0,330.0,7.75,CRITICAL,HIGH,3,1,ESCALATE_TO_ONCALL,[ESCALATE_AFTER_RETRIES] Still CRITICAL after 3 restarts.,CRITICAL
+27,inventory-service,us-east-1,27.0,53.0,79.0,318.0,1.52,OK,MEDIUM,3,1,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+28,inventory-service,eu-central-1,90.0,39.0,92.0,1438.0,5.29,CRITICAL,HIGH,1,1,SCALE_OUT,"[SCALE_OUT_UNDER_HIGH_LOAD] Status=CRITICAL, CPU=90.0% under HIGH traffic.",HIGH
+29,payment-api,us-east-1,87.0,27.0,70.0,1410.0,0.49,CRITICAL,HIGH,0,1,SCALE_OUT,"[SCALE_OUT_UNDER_HIGH_LOAD] Status=CRITICAL, CPU=87.0% under HIGH traffic.",HIGH
+30,search-service,eu-central-1,8.0,28.0,53.0,340.0,0.16,OK,LOW,4,0,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+31,payment-api,us-west-2,41.0,30.0,35.0,206.0,1.16,OK,LOW,3,1,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+32,orders-service,us-east-1,85.0,36.0,80.0,943.0,1.91,WARNING,HIGH,2,1,SCALE_OUT,"[SCALE_OUT_UNDER_HIGH_LOAD] Status=WARNING, CPU=85.0% under HIGH traffic.",HIGH
+33,orders-service,us-east-1,34.0,29.0,42.0,398.0,2.0,OK,LOW,4,0,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+34,search-service,us-west-2,27.0,56.0,77.0,115.0,1.76,OK,LOW,1,1,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+35,search-service,eu-central-1,21.0,37.0,43.0,717.0,1.2,OK,MEDIUM,2,0,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+36,auth-service,eu-central-1,49.0,63.0,56.0,857.0,2.25,WARNING,HIGH,1,1,NO_DECISION,[DEFAULT] No rule fired.,INFO
+37,search-service,us-west-2,26.0,25.0,65.0,244.0,2.54,WARNING,MEDIUM,0,1,NO_DECISION,[DEFAULT] No rule fired.,INFO
+38,payment-api,eu-central-1,40.0,91.0,84.0,602.0,2.21,OK,MEDIUM,0,0,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+39,auth-service,eu-central-1,39.0,75.0,48.0,98.0,1.67,OK,LOW,1,0,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+40,orders-service,us-west-2,27.0,65.0,43.0,187.0,1.36,OK,LOW,4,1,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+41,search-service,eu-central-1,20.0,72.0,52.0,163.0,1.95,OK,LOW,0,0,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+42,orders-service,us-west-2,95.0,40.0,64.0,1805.0,6.49,CRITICAL,HIGH,0,1,SCALE_OUT,"[SCALE_OUT_UNDER_HIGH_LOAD] Status=CRITICAL, CPU=95.0% under HIGH traffic.",HIGH
+43,auth-service,us-west-2,17.0,48.0,59.0,315.0,0.7,OK,LOW,0,0,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+44,inventory-service,us-west-2,28.0,71.0,95.0,435.0,1.4,WARNING,MEDIUM,4,1,CLEAR_LOGS_AND_TMP,[FREE_DISK_SPACE] Disk at 95.0%.,HIGH
+45,auth-service,us-east-1,42.0,24.0,63.0,744.0,3.85,WARNING,MEDIUM,0,1,NO_DECISION,[DEFAULT] No rule fired.,INFO
+46,orders-service,eu-central-1,75.0,69.0,44.0,770.0,3.94,WARNING,MEDIUM,4,0,NO_DECISION,[DEFAULT] No rule fired.,INFO
+47,orders-service,us-east-1,67.0,45.0,98.0,303.0,4.16,CRITICAL,HIGH,2,1,CLEAR_LOGS_AND_TMP,[FREE_DISK_SPACE] Disk at 98.0%.,HIGH
+48,auth-service,eu-central-1,60.0,84.0,68.0,277.0,2.88,WARNING,MEDIUM,2,1,NO_DECISION,[DEFAULT] No rule fired.,INFO
+49,orders-service,us-west-2,58.0,68.0,83.0,1435.0,1.02,CRITICAL,HIGH,1,1,RESTART_SERVICE,"[RESTART_UNRESPONSIVE_SERVICE] CRITICAL, prev_restarts=1.",CRITICAL
+50,inventory-service,eu-central-1,24.0,79.0,71.0,226.0,0.42,OK,LOW,3,1,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+51,payment-api,eu-central-1,41.0,31.0,72.0,236.0,1.14,OK,MEDIUM,1,1,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+52,payment-api,us-east-1,6.0,29.0,90.0,103.0,0.49,WARNING,LOW,3,1,CLEAR_LOGS_AND_TMP,[FREE_DISK_SPACE] Disk at 90.0%.,HIGH
+53,search-service,us-east-1,84.0,38.0,61.0,1086.0,3.96,WARNING,HIGH,0,0,NO_DECISION,[DEFAULT] No rule fired.,INFO
+54,inventory-service,us-east-1,56.0,35.0,61.0,345.0,0.93,OK,LOW,3,0,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+55,inventory-service,eu-central-1,75.0,84.0,86.0,1519.0,2.54,CRITICAL,HIGH,3,1,ESCALATE_TO_ONCALL,[ESCALATE_AFTER_RETRIES] Still CRITICAL after 3 restarts.,CRITICAL
+56,payment-api,eu-central-1,77.0,86.0,65.0,415.0,3.01,WARNING,MEDIUM,3,0,NO_DECISION,[DEFAULT] No rule fired.,INFO
+57,orders-service,us-west-2,50.0,60.0,72.0,226.0,0.47,OK,LOW,4,0,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+58,payment-api,us-east-1,29.0,73.0,38.0,158.0,1.41,OK,LOW,3,1,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+59,search-service,us-west-2,27.0,94.0,79.0,361.0,3.33,WARNING,MEDIUM,0,1,NO_DECISION,[DEFAULT] No rule fired.,INFO
+60,inventory-service,us-east-1,58.0,88.0,83.0,549.0,3.41,WARNING,MEDIUM,4,0,NO_DECISION,[DEFAULT] No rule fired.,INFO
+61,inventory-service,us-east-1,75.0,71.0,73.0,647.0,0.12,OK,MEDIUM,1,1,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+62,payment-api,eu-central-1,41.0,30.0,33.0,1106.0,4.74,WARNING,HIGH,3,0,OPEN_INVESTIGATION_TICKET,"[INVESTIGATE_BACKEND_LATENCY] High latency=1106.0ms, CPU=41.0% (likely downstream/backend issue).",MEDIUM
+63,inventory-service,us-east-1,21.0,61.0,88.0,274.0,0.65,WARNING,LOW,2,1,NO_DECISION,[DEFAULT] No rule fired.,INFO
+64,orders-service,us-west-2,30.0,64.0,36.0,631.0,0.08,OK,MEDIUM,1,0,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+65,auth-service,us-east-1,17.0,36.0,60.0,90.0,1.24,OK,LOW,3,0,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+66,search-service,us-east-1,52.0,40.0,44.0,527.0,0.67,OK,MEDIUM,2,0,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+67,search-service,us-east-1,68.0,29.0,55.0,556.0,3.77,WARNING,MEDIUM,4,0,NO_DECISION,[DEFAULT] No rule fired.,INFO
+68,auth-service,eu-central-1,35.0,88.0,74.0,729.0,3.13,WARNING,MEDIUM,3,1,NO_DECISION,[DEFAULT] No rule fired.,INFO
+69,auth-service,eu-central-1,61.0,33.0,92.0,325.0,6.8,CRITICAL,HIGH,3,1,ESCALATE_TO_ONCALL,[ESCALATE_AFTER_RETRIES] Still CRITICAL after 3 restarts.,CRITICAL
+70,inventory-service,eu-central-1,32.0,88.0,64.0,170.0,1.47,OK,LOW,3,1,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+71,inventory-service,eu-central-1,57.0,55.0,41.0,960.0,6.81,CRITICAL,HIGH,3,0,ESCALATE_TO_ONCALL,[ESCALATE_AFTER_RETRIES] Still CRITICAL after 3 restarts.,CRITICAL
+72,inventory-service,eu-central-1,82.0,61.0,93.0,1076.0,2.69,WARNING,HIGH,1,1,CLEAR_LOGS_AND_TMP,[FREE_DISK_SPACE] Disk at 93.0%.,HIGH
+73,payment-api,us-west-2,63.0,91.0,65.0,436.0,3.52,WARNING,MEDIUM,0,0,NO_DECISION,[DEFAULT] No rule fired.,INFO
+74,auth-service,us-east-1,66.0,80.0,60.0,1300.0,4.44,CRITICAL,HIGH,3,1,ESCALATE_TO_ONCALL,[ESCALATE_AFTER_RETRIES] Still CRITICAL after 3 restarts.,CRITICAL
+75,auth-service,us-east-1,48.0,94.0,69.0,564.0,2.77,WARNING,MEDIUM,2,1,NO_DECISION,[DEFAULT] No rule fired.,INFO
+76,search-service,eu-central-1,74.0,54.0,88.0,713.0,1.32,WARNING,MEDIUM,2,1,NO_DECISION,[DEFAULT] No rule fired.,INFO
+77,payment-api,us-east-1,52.0,43.0,98.0,946.0,0.96,CRITICAL,HIGH,1,0,CLEAR_LOGS_AND_TMP,[FREE_DISK_SPACE] Disk at 98.0%.,HIGH
+78,inventory-service,us-west-2,77.0,32.0,66.0,1856.0,4.2,CRITICAL,HIGH,1,1,RESTART_SERVICE,"[RESTART_UNRESPONSIVE_SERVICE] CRITICAL, prev_restarts=1.",CRITICAL
+79,payment-api,us-west-2,24.0,55.0,46.0,87.0,1.42,OK,LOW,0,0,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+80,search-service,us-west-2,100.0,33.0,92.0,558.0,5.1,CRITICAL,HIGH,0,1,SCALE_OUT,"[SCALE_OUT_UNDER_HIGH_LOAD] Status=CRITICAL, CPU=100.0% under HIGH traffic.",HIGH
+81,inventory-service,us-west-2,63.0,81.0,62.0,338.0,3.86,WARNING,MEDIUM,0,0,NO_DECISION,[DEFAULT] No rule fired.,INFO
+82,inventory-service,us-west-2,41.0,30.0,68.0,107.0,0.3,OK,LOW,1,0,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+83,search-service,us-west-2,78.0,68.0,96.0,1919.0,4.95,CRITICAL,HIGH,3,1,ESCALATE_TO_ONCALL,[ESCALATE_AFTER_RETRIES] Still CRITICAL after 3 restarts.,CRITICAL
+84,orders-service,eu-central-1,59.0,46.0,42.0,732.0,2.48,OK,MEDIUM,1,1,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+85,auth-service,us-east-1,16.0,72.0,30.0,362.0,0.15,OK,LOW,3,1,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+86,orders-service,us-east-1,23.0,29.0,88.0,224.0,1.41,WARNING,LOW,1,1,NO_DECISION,[DEFAULT] No rule fired.,INFO
+87,search-service,eu-central-1,32.0,54.0,49.0,138.0,1.09,OK,LOW,1,0,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+88,auth-service,us-east-1,56.0,71.0,68.0,599.0,0.5,OK,MEDIUM,2,1,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+89,inventory-service,us-east-1,42.0,23.0,62.0,1184.0,5.88,CRITICAL,HIGH,0,0,ROLLBACK_DEPLOYMENT,[ROLLBACK_ON_HIGH_ERRORS] Error rate=5.88%.,CRITICAL
+90,search-service,eu-central-1,53.0,80.0,52.0,217.0,1.15,OK,LOW,4,1,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+91,orders-service,us-east-1,67.0,80.0,41.0,1600.0,6.51,CRITICAL,HIGH,2,1,ROLLBACK_DEPLOYMENT,[ROLLBACK_ON_HIGH_ERRORS] Error rate=6.51%.,CRITICAL
+92,orders-service,us-west-2,46.0,56.0,93.0,629.0,2.64,WARNING,HIGH,3,0,CLEAR_LOGS_AND_TMP,[FREE_DISK_SPACE] Disk at 93.0%.,HIGH
+93,inventory-service,us-east-1,52.0,85.0,81.0,481.0,0.46,OK,MEDIUM,0,1,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+94,inventory-service,us-east-1,38.0,76.0,93.0,265.0,1.25,WARNING,LOW,0,0,CLEAR_LOGS_AND_TMP,[FREE_DISK_SPACE] Disk at 93.0%.,HIGH
+95,orders-service,eu-central-1,23.0,35.0,92.0,304.0,1.76,WARNING,LOW,0,0,CLEAR_LOGS_AND_TMP,[FREE_DISK_SPACE] Disk at 92.0%.,HIGH
+96,payment-api,us-west-2,40.0,34.0,58.0,1431.0,3.26,CRITICAL,HIGH,3,0,ESCALATE_TO_ONCALL,[ESCALATE_AFTER_RETRIES] Still CRITICAL after 3 restarts.,CRITICAL
+97,payment-api,us-west-2,58.0,81.0,83.0,1342.0,5.64,CRITICAL,HIGH,3,0,ESCALATE_TO_ONCALL,[ESCALATE_AFTER_RETRIES] Still CRITICAL after 3 restarts.,CRITICAL
+98,inventory-service,eu-central-1,29.0,37.0,95.0,177.0,1.84,WARNING,LOW,0,1,CLEAR_LOGS_AND_TMP,[FREE_DISK_SPACE] Disk at 95.0%.,HIGH
+99,inventory-service,us-west-2,57.0,95.0,68.0,1980.0,0.02,CRITICAL,HIGH,4,1,ESCALATE_TO_ONCALL,[ESCALATE_AFTER_RETRIES] Still CRITICAL after 4 restarts.,CRITICAL
+100,payment-api,us-west-2,70.0,78.0,78.0,1006.0,2.66,WARNING,HIGH,2,0,NO_DECISION,[DEFAULT] No rule fired.,INFO
+101,payment-api,eu-central-1,49.0,68.0,90.0,570.0,0.17,WARNING,MEDIUM,3,0,CLEAR_LOGS_AND_TMP,[FREE_DISK_SPACE] Disk at 90.0%.,HIGH
+102,inventory-service,us-east-1,37.0,76.0,42.0,382.0,0.66,OK,LOW,0,1,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+103,auth-service,eu-central-1,31.0,63.0,63.0,159.0,0.15,OK,LOW,4,1,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+104,auth-service,us-west-2,94.0,82.0,70.0,1392.0,3.04,CRITICAL,HIGH,4,0,ESCALATE_TO_ONCALL,[ESCALATE_AFTER_RETRIES] Still CRITICAL after 4 restarts.,CRITICAL
+105,search-service,us-east-1,45.0,75.0,41.0,227.0,1.99,OK,LOW,0,0,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+106,inventory-service,us-east-1,59.0,57.0,37.0,359.0,0.37,OK,HIGH,2,1,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+107,inventory-service,us-east-1,38.0,41.0,53.0,290.0,1.13,OK,LOW,1,0,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+108,search-service,us-west-2,83.0,49.0,48.0,793.0,3.98,WARNING,HIGH,3,1,NO_DECISION,[DEFAULT] No rule fired.,INFO
+109,inventory-service,us-west-2,40.0,89.0,66.0,1947.0,3.72,CRITICAL,HIGH,1,0,RESTART_SERVICE,"[RESTART_UNRESPONSIVE_SERVICE] CRITICAL, prev_restarts=1.",CRITICAL
+110,inventory-service,us-west-2,59.0,78.0,62.0,1608.0,7.7,CRITICAL,HIGH,2,0,ROLLBACK_DEPLOYMENT,[ROLLBACK_ON_HIGH_ERRORS] Error rate=7.7%.,CRITICAL
+111,inventory-service,us-west-2,20.0,57.0,67.0,275.0,1.14,OK,LOW,0,1,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+112,orders-service,us-east-1,95.0,83.0,36.0,1704.0,6.23,CRITICAL,HIGH,2,0,SCALE_OUT,"[SCALE_OUT_UNDER_HIGH_LOAD] Status=CRITICAL, CPU=95.0% under HIGH traffic.",HIGH
+113,search-service,us-west-2,45.0,32.0,47.0,177.0,1.24,OK,LOW,0,1,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+114,inventory-service,us-east-1,63.0,61.0,67.0,1799.0,1.05,CRITICAL,HIGH,3,0,ESCALATE_TO_ONCALL,[ESCALATE_AFTER_RETRIES] Still CRITICAL after 3 restarts.,CRITICAL
+115,payment-api,us-east-1,96.0,41.0,64.0,1049.0,4.25,CRITICAL,HIGH,2,1,SCALE_OUT,"[SCALE_OUT_UNDER_HIGH_LOAD] Status=CRITICAL, CPU=96.0% under HIGH traffic.",HIGH
+116,orders-service,eu-central-1,34.0,48.0,48.0,629.0,3.85,WARNING,MEDIUM,3,1,NO_DECISION,[DEFAULT] No rule fired.,INFO
+117,auth-service,us-west-2,21.0,53.0,77.0,354.0,0.25,OK,LOW,4,1,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+118,orders-service,us-east-1,54.0,48.0,71.0,1265.0,0.2,CRITICAL,HIGH,0,1,RESTART_SERVICE,"[RESTART_UNRESPONSIVE_SERVICE] CRITICAL, prev_restarts=0.",CRITICAL
+119,orders-service,eu-central-1,34.0,58.0,34.0,293.0,0.18,OK,MEDIUM,3,0,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+120,auth-service,us-east-1,48.0,95.0,83.0,1095.0,3.63,WARNING,HIGH,1,1,OPEN_INVESTIGATION_TICKET,"[INVESTIGATE_BACKEND_LATENCY] High latency=1095.0ms, CPU=48.0% (likely downstream/backend issue).",MEDIUM
+121,auth-service,us-west-2,66.0,47.0,77.0,872.0,0.26,WARNING,HIGH,3,1,NO_DECISION,[DEFAULT] No rule fired.,INFO
+122,payment-api,us-west-2,48.0,27.0,75.0,268.0,1.09,OK,LOW,3,1,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+123,payment-api,us-east-1,31.0,26.0,32.0,367.0,2.57,WARNING,MEDIUM,2,0,NO_DECISION,[DEFAULT] No rule fired.,INFO
+124,payment-api,eu-central-1,9.0,49.0,57.0,363.0,0.41,OK,LOW,2,0,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+125,search-service,us-east-1,38.0,34.0,52.0,283.0,2.16,OK,MEDIUM,0,0,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+126,auth-service,us-west-2,42.0,26.0,63.0,245.0,0.03,OK,LOW,1,1,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+127,search-service,us-east-1,44.0,85.0,76.0,1275.0,3.59,CRITICAL,HIGH,4,0,ESCALATE_TO_ONCALL,[ESCALATE_AFTER_RETRIES] Still CRITICAL after 4 restarts.,CRITICAL
+128,inventory-service,eu-central-1,44.0,58.0,96.0,102.0,1.45,CRITICAL,LOW,3,0,ESCALATE_TO_ONCALL,[ESCALATE_AFTER_RETRIES] Still CRITICAL after 3 restarts.,CRITICAL
+129,auth-service,us-west-2,74.0,29.0,86.0,260.0,1.96,WARNING,MEDIUM,0,1,NO_DECISION,[DEFAULT] No rule fired.,INFO
+130,search-service,us-east-1,13.0,68.0,71.0,220.0,1.25,OK,LOW,4,1,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+131,inventory-service,eu-central-1,67.0,90.0,44.0,503.0,6.34,CRITICAL,HIGH,1,1,ROLLBACK_DEPLOYMENT,[ROLLBACK_ON_HIGH_ERRORS] Error rate=6.34%.,CRITICAL
+132,inventory-service,us-east-1,63.0,60.0,42.0,614.0,1.59,OK,MEDIUM,3,1,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+133,orders-service,us-west-2,48.0,31.0,40.0,322.0,0.13,OK,LOW,3,0,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+134,orders-service,us-east-1,43.0,35.0,72.0,1501.0,7.65,CRITICAL,HIGH,3,1,ESCALATE_TO_ONCALL,[ESCALATE_AFTER_RETRIES] Still CRITICAL after 3 restarts.,CRITICAL
+135,inventory-service,eu-central-1,23.0,93.0,43.0,387.0,0.62,OK,LOW,4,0,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+136,payment-api,eu-central-1,48.0,34.0,77.0,260.0,1.4,OK,MEDIUM,2,0,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+137,inventory-service,eu-central-1,79.0,54.0,33.0,1682.0,5.14,CRITICAL,HIGH,0,0,ROLLBACK_DEPLOYMENT,[ROLLBACK_ON_HIGH_ERRORS] Error rate=5.14%.,CRITICAL
+138,orders-service,eu-central-1,63.0,92.0,48.0,509.0,0.02,OK,MEDIUM,3,0,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+139,payment-api,eu-central-1,41.0,68.0,57.0,487.0,5.97,CRITICAL,HIGH,3,1,ESCALATE_TO_ONCALL,[ESCALATE_AFTER_RETRIES] Still CRITICAL after 3 restarts.,CRITICAL
+140,orders-service,us-east-1,59.0,26.0,40.0,482.0,3.11,WARNING,MEDIUM,1,0,NO_DECISION,[DEFAULT] No rule fired.,INFO
+141,search-service,us-east-1,45.0,82.0,84.0,857.0,3.54,WARNING,HIGH,4,1,NO_DECISION,[DEFAULT] No rule fired.,INFO
+142,inventory-service,us-west-2,53.0,34.0,85.0,342.0,0.23,OK,LOW,2,1,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+143,search-service,eu-central-1,25.0,20.0,37.0,375.0,1.58,OK,MEDIUM,1,1,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+144,payment-api,us-east-1,57.0,75.0,93.0,485.0,0.48,WARNING,MEDIUM,1,0,CLEAR_LOGS_AND_TMP,[FREE_DISK_SPACE] Disk at 93.0%.,HIGH
+145,inventory-service,eu-central-1,54.0,29.0,75.0,1324.0,4.47,CRITICAL,HIGH,3,0,ESCALATE_TO_ONCALL,[ESCALATE_AFTER_RETRIES] Still CRITICAL after 3 restarts.,CRITICAL
+146,inventory-service,us-east-1,29.0,73.0,81.0,470.0,2.3,OK,MEDIUM,2,0,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+147,inventory-service,us-east-1,41.0,31.0,76.0,782.0,1.84,OK,MEDIUM,3,0,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
+148,payment-api,us-west-2,65.0,63.0,69.0,1373.0,0.63,CRITICAL,HIGH,1,1,RESTART_SERVICE,"[RESTART_UNRESPONSIVE_SERVICE] CRITICAL, prev_restarts=1.",CRITICAL
+149,payment-api,us-east-1,80.0,64.0,54.0,533.0,4.24,WARNING,HIGH,2,0,NO_DECISION,[DEFAULT] No rule fired.,INFO
+150,payment-api,us-east-1,21.0,29.0,49.0,181.0,0.35,OK,LOW,1,1,NO_ACTION,[NO_ACTION_OK] Service healthy.,INFO
