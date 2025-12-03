@@ -62,9 +62,5 @@ def high_cpu(self):
     # define action here
 ```
 
-## 📄 License
-
-This project is licensed under the MIT License.
-
 ---
 
